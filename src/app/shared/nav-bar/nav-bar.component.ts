@@ -12,4 +12,6 @@ export class NavBarComponent implements OnInit {
   ngOnInit() {
   }
 
+  // TODO Treba da se dodaju linkovi
+
 }
