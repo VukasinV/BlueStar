@@ -12,4 +12,8 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
+  login() {
+    // TODO Check if this user exists, and if it does, navigate to home page
+  }
+
 }

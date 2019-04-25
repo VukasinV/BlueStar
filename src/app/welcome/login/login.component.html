@@ -1,5 +1,9 @@
 <div>
-  <input type="text" class="inout-group" placeholder="username">
-  <input type="text" class="inout-group" placeholder="password">
-  <button class="btn btn-primary" [routerLink]="['/home']">login</button>
+  <form class="form-inline">
+    <div class="form-group mx-sm-3">
+      <input type="text" class="form-control mr-2" placeholder="Username">
+      <input type="password" class="form-control" placeholder="Password">
+    </div>
+    <button type="button" class="btn btn-primary" (click)="login()">Login</button>
+  </form>
 </div>

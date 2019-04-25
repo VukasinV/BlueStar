@@ -1,11 +1,16 @@
 .welcome {
     height: 100vh;
+    background-color: #eb5e30;
 }
 
 .login {
     background-color: #b9d9c3;
+    height: 50px;
+    align-items: center;
+    padding-right: 10px;
 }
 
 .register {
     background-color: #fbcb7b;
+    border: 1px solid black;
 }

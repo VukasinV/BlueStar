@@ -1,2 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
  @import "~bootstrap/dist/css/bootstrap.css";
+
+ /*
+    mint: #b9d9c3;
+    charred: #752a07;
+    toasted: #fbcb7b;
+    tomato: #eb5e30;
+ */
+
+.body {
+    height: 100vh;
+}
+
+.app {
+    height: 100%;
+}

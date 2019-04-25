@@ -1,29 +1,31 @@
-<app-nav-bar></app-nav-bar>
-<button class="btn btn-primary" data-toggle="modal" data-target="#myModal"> DODAJ PREDLOG</button>
-<!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
+<div>
+  <app-nav-bar></app-nav-bar>
+  <button class="btn btn-primary" data-toggle="m  odal" data-target="#myModal"> DODAJ PREDLOG</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
 
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Dodaj predlog</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Dodaj predlog</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <input type="text" class="form-group" placeholder="lokacija">
+          <input type="text" class="form-group" placeholder="vreme">
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button class="btn btn-primary"> Dodaj </button>
+        </div>
+
       </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        <input type="text" class="form-group" placeholder="lokacija">
-        <input type="text" class="form-group" placeholder="vreme">
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button class="btn btn-primary"> Dodaj </button>
-      </div>
-
     </div>
   </div>
+  <app-suggestion-pool></app-suggestion-pool>
 </div>
-<app-suggestion-pool></app-suggestion-pool>
