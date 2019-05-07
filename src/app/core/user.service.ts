@@ -1,39 +1,22 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { User } from '../model/user.model';
 
 @Injectable()
+
 export class UserService {
 
-  users: [
-    {
-      username: "luzajic",
-      password: "luzajic123",
-      fullname: "Vladan Luzajic",
-    },
-    {
-      username: "nesha",
-      password: "nesha123",
-      fullname: "Nenad Lazaroj",
-    },
-    {
-      username: "marushka",
-      password: "marushka123",
-      fullname: "Marija Cosovic",
-    },
-    {
-      username: "novakovic",
-      password: "novakovic123",
-      fullname: "Marija Novakovic",
-    },
-    {
-      username: "jovan",
-      password: "jovan123",
-      fullname: "Jovan Grbic",
-    }
-  ];
+  
 
-  constructor() { }
+  private userUrl: string="http://localhost:64774/api"
 
-  getUsers() {
-    return this.users;
+  constructor(private http:HttpClient) { }
+
+  newRegister(user) {
+    return this.http.post(`${this.userUrl}/users`, user)
   }
+  login(username: String, password: String) {
+    
+  }
+
 }

@@ -9,6 +9,8 @@ import { WelcomeModule } from './welcome/welcome.module';
 import { HomeComponent } from './home/home.component';
 import { HomeModule } from './home/home.module';
 import { CoreModule } from './core/core.module';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 // definisanje ruta u aplikaciji
 const routes = [
@@ -30,9 +32,12 @@ const routes = [
     WelcomeModule,
     HomeModule,
     RouterModule.forRoot(routes),
-    CoreModule
+    CoreModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
+ 
   bootstrap: [AppComponent]
 })
 export class AppModule { }
