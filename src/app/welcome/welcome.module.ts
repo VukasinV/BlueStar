@@ -4,11 +4,13 @@ import { WelcomeComponent } from './welcome.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
   ],
   declarations: [WelcomeComponent, LoginComponent, RegisterComponent]
 })
